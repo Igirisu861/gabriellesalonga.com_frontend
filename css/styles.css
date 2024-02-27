@@ -1,0 +1,45 @@
+.generalBg{
+    background-color: #F0FFFF !important;
+    
+}
+.main_title{
+    font-size: xx-large;
+    text-align: center;
+    color:#1D1E18;
+}
+#clear_color2{
+    background-color: #DBCBD8 !important;
+}
+#darkest_color{
+    background-color: #1D1E18 !important;
+}
+#text_font{
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    font-size: large;
+    color:#1D1E18;
+}
+#text_font_clear{
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    color:#F0FFFF;
+}
+#title_font {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    color:#1D1E18;
+}
+#banner-img{
+    margin-top: -100px;
+    margin-bottom: -50px;
+}
+.green-bg{
+    background-color: #9AD4D6;
+}
+
+.section-title-text{
+    font-size: 50px;;
+    text-align: center;
+    color:#564787 !important;
+}
