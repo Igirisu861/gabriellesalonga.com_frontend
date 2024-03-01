@@ -13,6 +13,9 @@
 .darkest_color{
     background-color: #1D1E18 !important;
 }
+.purple-bg{
+    background-color: #564787;
+}
 
 
 #text_font{
@@ -23,9 +26,9 @@
 }
 
 #text_font_clear{
-    font-family: "Ruda", sans-serif;
+    font-family: "Ruda", sans-serif !important;
     font-optical-sizing: auto;
-    color:#F0FFFF;
+    color:#F0FFFF !important;
 }
 #text_font_green{
     font-family: "Ruda", sans-serif;
@@ -74,6 +77,11 @@
     min-width: 100%;
     height: 500px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 
 
 

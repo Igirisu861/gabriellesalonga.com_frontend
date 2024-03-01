@@ -15,12 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ruda:wght@400..900&display=swap" rel="stylesheet">
     </head>
 
-  <body class= generalBg>
-    <br>
-    <div class="" id="title_font">
+  <body class= purple-bg>
+    <div class="generalBg p-1" id="title_font" >
         <h1 class="main_title navbar-brand" id="top" href="">Gabrielle Salonga</h1>
     </div>
 
+    <!--
+        navbar
+      -->
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="clear_color2">
         <div class="container-fluid" id="clear_color2">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,22 +38,315 @@
         </div>
       </nav>
 
-      <section class="container" id="darkest_color">
+      <!--
+        cards
+      -->
+      <section class="container-fluid justify-content-center mb-2">
         <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+          <h1 id="title_font_clear" style="font-size: 110px; text-align:center;">SHOP</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm p-2 justify-content-center">
+                <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                    <img class="card-img-top" src="../imgs/coffebreak.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title" id="text_font_clear">INFINIY</h5>
+                      <h5 class="card-title" id="text_font">COFFEE BREAK</h5>
                       <p class="card-text">From: $25</p>
-                      <a href="#" class="btn btn-primary">More</a>
+                      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#coffeeModal">More</button>
                     </div>
                   </div>
             </div>
+            <div class="col-sm p-2">
+              <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                  <img class="card-img-top" src="../imgs/float.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title" id="text_font">FLOAT</h5>
+                    <p class="card-text">From: $25</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#floatModal">More</button>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm p-2">
+              <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                <img class="card-img-top" src="../imgs/chairsfalling.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" id="text_font">FALL FROM GRACE</h5>
+                  <p class="card-text">From: $25</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fallModal">More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm p-2">
+              <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                <img class="card-img-top" src="../imgs/tvs.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" id="text_font">BROADCAST</h5>
+                  <p class="card-text">From: $25</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#broadcastModal">More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm p-2">
+              <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                <img class="card-img-top" src="../imgs/noodles.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" id="text_font">CUP NOODLES COLLAB</h5>
+                  <p class="card-text">From: $25</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noodlesModal">More</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm p-2">
+              <div class="card generalBg" style="width: 18rem; margin: 0 auto;">
+                <img class="card-img-top" src="../imgs/90sPool.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title" id="text_font">POOL PARTY</h5>
+                  <p class="card-text">From: $25</p>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#poolModal">More</button>
+                </div>
+              </div>
+            </div>
+
         </div>
+        <br><br>
       </section>
 
-      
+<div class="modal fade" id="coffeeModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">COFFEE BREAK</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/coffebreak.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="floatModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">FLOAT</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/float.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="fallModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">FALL FROM GRACE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/chairsfalling.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="broadcastModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">BROADCAST</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/tvs.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="noodlesModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">CUP NOODLES COLLAB</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/noodles.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="poolModal" tabindex="-1" aria-labelledby="coffeeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="coffeeModalLabel">POOL PARTY</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body flex-container" style="position: relative;">
+        <div class="row">
+          <img src="../imgs/90sPool.jpg" >
+        </div>
+        <div class="row">
+          <p id="text_font">Escape reality for a while with these dreamy, surreal landscapes.</p>
+          <p>- Paper thickness: 10.3 mil</p>
+          <p>- Paper weight: 5.57 oz/y² (189 g/m²)</p>
+          <p> - Giclée printing quality</p>
+          <p> - Opacity: 94%</p>
+          <p> - ISO brightness: 104%</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pick your print size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">10"x10"</a></li>
+            <li><a class="dropdown-item" href="#">12"x12"</a></li>
+            <li><a class="dropdown-item" href="#">12"x16"</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!--
+        footer
+      -->
+      <footer id="text_font" style="margin-top: auto;">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-body">gabriellesalonga.com</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
