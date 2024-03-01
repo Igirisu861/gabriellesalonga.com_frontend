@@ -10,25 +10,41 @@
 #clear_color2{
     background-color: #DBCBD8 !important;
 }
-#darkest_color{
+.darkest_color{
     background-color: #1D1E18 !important;
 }
+
+
 #text_font{
     font-family: "Ruda", sans-serif;
     font-optical-sizing: auto;
     font-size: large;
     color:#1D1E18;
 }
+
 #text_font_clear{
     font-family: "Ruda", sans-serif;
     font-optical-sizing: auto;
     color:#F0FFFF;
 }
+#text_font_green{
+    font-family: "Ruda", sans-serif;
+    font-optical-sizing: auto;
+    color:#9AD4D6;
+}
+
+
+
 #title_font {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;  
     color:#1D1E18;
+}
+#title_font_clear{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400; 
+    color:#F0FFFF;
 }
 #banner-img{
     margin-top: -100px;
@@ -43,3 +59,21 @@
     text-align: center;
     color:#564787 !important;
 }
+
+.gradient{
+    background-image: linear-gradient(#F0FFFF,#1D1E18) !important;
+}
+.inverse-gradient{
+    background-image: linear-gradient(#1D1E18,#F0FFFF) !important;
+}
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+
+
