@@ -2,6 +2,12 @@
     background-color: #F0FFFF !important;
     
 }
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
 .main_title{
     font-size: xx-large;
     text-align: center;
