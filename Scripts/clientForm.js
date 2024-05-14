@@ -1,14 +1,15 @@
-function contactSub(){
-    document.getElementById('contactForm').addEventListener('submit', function(event){
+function clientSub(){
+    document.getElementById('clientForm').addEventListener('submit', function(event){
         event.preventDefault();
         
-        const formData = {
-            full_name: document.getElementById('full_name').value,
+        const formData={
+            name: document.getElementById('name').value,
+            last_name: document.getElementById('last_name').value,
             email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message:document.getElementById('message').value
+            phone: document.getElementById('phone').value,
+            address:document.getElementById('address').value
         };
-        fetch('http://localhost:4000/api/contacts/',{
+        fetch('http://localhost:4000/api/clients/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -23,7 +24,7 @@ function contactSub(){
         })
         .then(data=>{
             console.log(data);
-            alert('Message submitted!');
+            alert('Information submitted!');
         })
         .catch(error=>{
             console.error('There was a problem with fetching:', error);
@@ -32,7 +33,7 @@ function contactSub(){
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    contactSub();
+    clientSub();
 });
 
 
