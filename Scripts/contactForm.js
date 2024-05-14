@@ -8,7 +8,7 @@ function contactSub(){
             subject: document.getElementById('subject').value,
             message:document.getElementById('message').value
         };
-        fetch('https://gabriellesalonga-back.azurewebsites.net/api/contacts/',{
+        fetch('http://localhost:4000/api/contacts/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'

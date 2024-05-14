@@ -21,7 +21,7 @@ function clientSub(){
             phone: document.getElementById('phone').value,
             address:document.getElementById('address').value
         };
-        fetch('https://gabriellesalonga-back.azurewebsites.net/api/clients/',{
+        fetch('http://localhost:4000/api/clients/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
