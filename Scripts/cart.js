@@ -1,27 +1,18 @@
-// script.js
-let cliente = {};
+
 let carrito = [];
+let nombresArticulos = [];
 
-function agregarCliente(formData) {
-    cliente = formData;
-    actualizarTablaCliente();
-}
-
-function agregarArticulo(nombre, precio) {
-    const articulo = { nombre, precio };
+function agregarArticulo(nombre,precio) {
+    const articulo = { nombre,precio };
     carrito.push(articulo);
+    nombresArticulos.push(nombre);
     actualizarTablaCarrito();
 }
-
 
 function eliminarArticulo(index) {
     carrito.splice(index, 1);
+    nombresArticulos.splice(index, 1);
     actualizarTablaCarrito();
-}
-
-function actualizarTablaCliente() {
-    const tablaCliente = document.getElementById('tablaCliente');
-    tablaCliente.innerHTML = `<tr><td>${cliente.name}</td><td>${cliente.last_name}</td><td>${cliente.email}</td><td>${cliente.phone}</td><td>${cliente.address}</td></tr>`;
 }
 
 function actualizarTablaCarrito() {
@@ -32,18 +23,6 @@ function actualizarTablaCarrito() {
     });
 }
 
-document.getElementById('clientForm').addEventListener('submit', function(event){
-    event.preventDefault();
-    const formData = {
-        name: document.getElementById('name').value,
-        last_name: document.getElementById('last_name').value,
-        email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value,
-        address: document.getElementById('address').value
-    };
-    agregarCliente(formData);
-});
-
 document.addEventListener('click', function(event) {
     if (event.target && event.target.id === 'add-cart') {
         const modal = event.target.closest('.modal');
@@ -52,8 +31,3 @@ document.addEventListener('click', function(event) {
         agregarArticulo(titulo, precio);
     }
 });
-
-
-// Resto del código...
-
-

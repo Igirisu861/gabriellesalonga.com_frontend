@@ -1,6 +1,7 @@
+
 async function fetchPrints(){
     try{
-        const response = await fetch('http://localhost:4000/api/prints/');
+        const response = await fetch('https://gabriellesalonga-back.azurewebsites.net/api/prints/');
         const prints = await response.json();
         return prints;
     }catch (error) {
@@ -23,7 +24,7 @@ async function updateCardInfo(){
 
 async function updateAllModalsContent() {
     try {
-        const response = await fetch('http://localhost:4000/api/prints/');
+        const response = await fetch('https://gabriellesalonga-back.azurewebsites.net/api/prints/');
         const prints = await response.json();
         
         prints.forEach((print, index) => {
@@ -40,9 +41,14 @@ async function updateAllModalsContent() {
                 
                 print.sizes.forEach(size => {
                     const dropdownItem = document.createElement('li');
-                    dropdownItem.innerHTML = `<a class="dropdown-item" href="#">${size}</a>`;
+                    dropdownItem.innerHTML = `<a class="dropdown-item" href="#" id="sizeOption">${size}</a>`;
                     dropdownMenu.appendChild(dropdownItem);
+
+                    dropdownItem.addEventListener('click', function(event) {
+                        selectedOption = event.target.textContent;
+                    });
                 });
+
             }
         });
     } catch (error) {

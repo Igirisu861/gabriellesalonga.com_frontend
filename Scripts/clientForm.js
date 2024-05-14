@@ -1,3 +1,15 @@
+let cliente = {};
+
+function agregarCliente(formData) {
+    cliente = formData;
+    actualizarTablaCliente();
+}
+
+function actualizarTablaCliente() {
+    const tablaCliente = document.getElementById('tablaCliente');
+    tablaCliente.innerHTML = `<tr><td>${cliente.name}</td><td>${cliente.last_name}</td><td>${cliente.email}</td><td>${cliente.phone}</td><td>${cliente.address}</td></tr>`;
+}
+
 function clientSub(){
     document.getElementById('clientForm').addEventListener('submit', function(event){
         event.preventDefault();
@@ -9,7 +21,7 @@ function clientSub(){
             phone: document.getElementById('phone').value,
             address:document.getElementById('address').value
         };
-        fetch('http://localhost:4000/api/clients/',{
+        fetch('https://gabriellesalonga-back.azurewebsites.net/api/clients/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
@@ -25,9 +37,11 @@ function clientSub(){
         .then(data=>{
             console.log(data);
             alert('Information submitted!');
+            agregarCliente(formData); // Llamar a la función agregarCliente si la solicitud es exitosa
         })
         .catch(error=>{
             console.error('There was a problem with fetching:', error);
+            alert('Email exists or data incomplete, try again');
         });
     });
 }
@@ -35,5 +49,6 @@ function clientSub(){
 document.addEventListener('DOMContentLoaded', function() {
     clientSub();
 });
+
 
 
