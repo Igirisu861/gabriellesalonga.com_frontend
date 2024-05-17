@@ -18,9 +18,18 @@ function eliminarArticulo(index) {
 function actualizarTablaCarrito() {
     const tablaCarrito = document.getElementById('tablaCarrito');
     tablaCarrito.innerHTML = '';
+    let subtotal = 0;
+
     carrito.forEach((articulo, index) => {
-        tablaCarrito.innerHTML += `<tr><td>${articulo.nombre}</td><td>${articulo.precio}</td><td><button onclick="eliminarArticulo(${index})" class="btn btn-danger">Remove</button></td></tr>`;
+        subtotal += articulo.precio;
+        tablaCarrito.innerHTML += `<tr><td>${articulo.nombre}</td><td>${articulo.precio.toFixed(2)}</td><td><button onclick="eliminarArticulo(${index})" class="btn btn-danger">Remove</button></td></tr>`;
     });
+
+    tablaCarrito.innerHTML += `
+        <tr>
+            <td colspan="2"><strong>Subtotal</strong></td>
+            <td><strong>${subtotal.toFixed(2)}</strong></td>
+        </tr>`;
 }
 
 document.addEventListener('click', function(event) {
