@@ -8,7 +8,7 @@ function contactSub(){
             subject: document.getElementById('subject').value,
             message:document.getElementById('message').value
         };
-        fetch('http://localhost:4000/api/contacts/',{
+        fetch('https://gabriellesalonga-backend.onrender.com/api/contacts/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'

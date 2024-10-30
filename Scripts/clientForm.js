@@ -21,7 +21,7 @@ function clientSub(){
             phone: document.getElementById('phone').value,
             address:document.getElementById('address').value
         };
-        fetch('http://localhost:4000/api/clients/',{
+        fetch('https://gabriellesalonga-backend.onrender.com/api/clients/',{
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'

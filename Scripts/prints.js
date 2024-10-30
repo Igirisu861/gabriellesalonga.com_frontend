@@ -1,7 +1,7 @@
 
 async function fetchPrints(){
     try{
-        const response = await fetch('http://localhost:4000/api/prints/');
+        const response = await fetch('https://gabriellesalonga-backend.onrender.com/api/prints/');
         const prints = await response.json();
         return prints;
     }catch (error) {
@@ -24,7 +24,7 @@ async function updateCardInfo(){
 
 async function updateAllModalsContent() {
     try {
-        const response = await fetch('http://localhost:4000/api/prints/');
+        const response = await fetch('https://gabriellesalonga-backend.onrender.com/api/prints/');
         const prints = await response.json();
         
         prints.forEach((print, index) => {
